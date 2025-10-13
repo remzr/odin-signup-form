@@ -1,0 +1,12 @@
+@font-face {
+    font-family: font-main;
+    src: url(./font/Norse-Bold.otf);
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+h1 {
+    font-family: font-main, sans-serif;
+}
