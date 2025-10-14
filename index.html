@@ -8,7 +8,7 @@
 </head>
 <body>
     <aside>
-        <div>
+        <div id="hero-label">
             <span><img src="img/odin-lined.png" alt="Logo of Odins-Head as white lineart" width="100px"></span>
             <h1>ODIN</h1>
         </div>
@@ -18,12 +18,12 @@
     </aside>
     <main>
         <section id="section-hero">
-        <p>Dies ist kein echtes Anmeldeformular, sondern eine einfache Übung.</p> 
+        <h2>Dies ist kein echtes Anmeldeformular, sondern eine einfache Übung.</h2> 
         </section>
         <section id="section-form">
-                <h2>Account erstellen</h1>
-                <form action="example.com/path" method="post">
+                <form action="example.com/path" method="post">     
                     <fieldset id="form-input">
+                        <h2>Account erstellen</h2>
                         <label for="vorname">VORNAME</label>
                         <input type="text" id="vorname" name="vorname">
                         <label for="vorname">NACHNAME</label>
@@ -37,8 +37,10 @@
                         <label for="vorname">PASSWORT WIEDERHOLEN</label>
                         <input type="password" id="passwort" name="passwort">
                     </fieldset>
-                    <button type="submit">Registrieren</button>
-                    <p>Hast du bereits einen Account? <a href="">Log in</a></p>
+                    <fieldset id="form-submit">
+                        <button type="submit">Registrieren</button>
+                        <p>Hast du bereits einen Account? <a href="">Log in</a></p>
+                    </fieldset>
                 </form>
         </section>
     </main>

@@ -9,21 +9,70 @@ p, h2, label {
 }
 
 body {
-    background-color: rgb(245, 245, 245);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
 }
 
 h1 {
     font-family: font-main, sans-serif;
+    color: white;
+    font-size: 6rem;
+    padding-top: 18px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
 }
 
 aside {
     background-image: url(./img/sidebar.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+}
+
+#hero-label {
+    background-color: hsla(0, 0%, 0%, 0.2);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 20vh;
+    justify-content: center;
 }
 
 footer {
-    background-color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 footer>p {
     color: white;
+    font-weight: lighter;
+}
+
+main {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form-input {
+    background-color: white;
+    border: none;
+    padding: 20px 50px;
+}
+
+#form-submit {
+    border: none;
+    padding: 20px 50px;
+}
+
+#section-hero {
+    padding: 20px 50px;
 }
