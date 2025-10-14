@@ -7,11 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-       <p>Dies ist kein echtes Anmeldeformular, sondern eine einfache Übung.</p> 
-    </section>
+    <aside>
+        <div>
+            <span><img src="img/odin-lined.png" alt="Logo of Odins-Head as white lineart" width="100px"></span>
+            <h1>ODIN</h1>
+        </div>
+        <footer>
+            <p>Photo by Halie West on Unsplash</p>
+        </footer>
+    </aside>
     <main>
-        <h1>Account erstellen</h1>
+        <section id="section-hero">
+        <p>Dies ist kein echtes Anmeldeformular, sondern eine einfache Übung.</p> 
+        </section>
+        <section id="section-form">
+                <h2>Account erstellen</h1>
+                <form action="example.com/path" method="post">
+                    <fieldset id="form-input">
+                        <label for="vorname">VORNAME</label>
+                        <input type="text" id="vorname" name="vorname">
+                        <label for="vorname">NACHNAME</label>
+                        <input type="text" id="vorname" name="nachname">
+                        <label for="vorname">EMAIL</label>
+                        <input type="email" id="email" name="email">                
+                        <label for="vorname">TELEFON</label>
+                        <input type="number" id="telefon" name="telefon">                
+                        <label for="vorname">PASSWORT</label>
+                        <input type="password" id="passwort" name="passwort">
+                        <label for="vorname">PASSWORT WIEDERHOLEN</label>
+                        <input type="password" id="passwort" name="passwort">
+                    </fieldset>
+                    <button type="submit">Registrieren</button>
+                    <p>Hast du bereits einen Account? <a href="">Log in</a></p>
+                </form>
+        </section>
     </main>
 </body>
 </html>

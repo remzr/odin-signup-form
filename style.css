@@ -3,10 +3,27 @@
     src: url(./font/Norse-Bold.otf);
 }
 
+p, h2, label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
 body {
     background-color: rgb(245, 245, 245);
 }
 
 h1 {
     font-family: font-main, sans-serif;
+}
+
+aside {
+    background-image: url(./img/sidebar.jpg);
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+}
+
+footer>p {
+    color: white;
 }
