@@ -18,24 +18,38 @@
     </aside>
     <main>
         <section id="section-hero">
-        <h2>Dies ist kein echtes Anmeldeformular, sondern eine einfache Übung.</h2> 
+        <h2>Dies ist kein echtes Anmeldeformular, sondern eine einfache Übung, bei der die Aufgabe darin besteht eine Login-Portal nachzubauen.</h2> 
         </section>
         <section id="section-form">
                 <form action="example.com/path" method="post">     
                     <fieldset id="form-input">
                         <h2>Account erstellen</h2>
-                        <label for="vorname">VORNAME</label>
-                        <input type="text" id="vorname" name="vorname">
-                        <label for="vorname">NACHNAME</label>
-                        <input type="text" id="vorname" name="nachname">
-                        <label for="vorname">EMAIL</label>
-                        <input type="email" id="email" name="email">                
-                        <label for="vorname">TELEFON</label>
-                        <input type="number" id="telefon" name="telefon">                
-                        <label for="vorname">PASSWORT</label>
-                        <input type="password" id="passwort" name="passwort">
-                        <label for="vorname">PASSWORT WIEDERHOLEN</label>
-                        <input type="password" id="passwort" name="passwort">
+                        <div id="input-fields">
+                            <fieldset class="form-field-group">
+                                <label for="vorname">VORNAME</label>
+                                <input type="text" id="vorname" name="vorname" value="Max" required />
+                            </fieldset>
+                            <fieldset class="form-field-group">
+                                <label for="nachname">NACHNAME</label>
+                                <input type="text" id="nachname" name="nachname" value="Muster" required />
+                            </fieldset>
+                            <fieldset class="form-field-group">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" value="na@me@example.com" required />                                   
+                            </fieldset>
+                            <fieldset class="form-field-group">
+                                <label for="telefon">TELEFON</label>
+                                <input type="tel" id="telefon" name="telefon">                
+                            </fieldset>
+                            <fieldset class="form-field-group">
+                                <label for="passwort">PASSWORT</label>
+                                <input type="password" id="passwort" name="passwort" required />
+                            </fieldset>
+                            <fieldset class="form-field-group">
+                                <label for="passwort-repeat">PASSWORT WIEDERHOLEN</label>
+                                <input type="password" minlength="8" maxlength="20" id="passwort-repeat" name="passwort-repeat" required />
+                            </fieldset>
+                        </div>
                     </fieldset>
                     <fieldset id="form-submit">
                         <button type="submit">Registrieren</button>
